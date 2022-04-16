@@ -1,0 +1,246 @@
+.cabecalhoPrincipal .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.cabecalhoPrincipal-nav {
+  display: flex;
+}
+
+main.conteudoPrincipal {
+  background: #e7e7e7;
+}
+
+.conteudoPrincipal-cursos {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.conteudoPrincipal-cursos-link {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 0 0;
+  width: 23%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+  margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+  margin-left: 0;
+}
+
+.conteudoPrincipal-cursos-link .java {
+	background-image: url(../img/cursos/java.png) ;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.conteudoPrincipal-cursos-link .php {
+	background: url(../img/cursos/php.png) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .ruby {
+	background: url(../img/cursos/ruby.png) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .net {
+	background: url(../img/cursos/dotnet.png) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .github {
+	background: url(../img/cursos/github.png) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .flexbox {
+	background: url(../img/cursos/css.png) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .devWeb {
+	background: url(../img/cursos/devweb.png) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .javaWeb {
+	background: url(../img/background2.svg) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .js {
+	background: url(../img/cursos/js.png) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .angular {
+	background: url(../img/cursos/angular.png) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .tdd {
+	background: url(../img/cursos/c.png) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .redes {
+	background: url(../img/cursos/redes.png) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .sql {
+	background: url(../img/cursos/mysql.png) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .mariadb {
+	background: url(../img/cursos/mariadb.png) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .postegres {
+	background: url(../img/cursos/postgre.png) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .python {
+	background: url(../img/cursos/pitao.png) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .swift {
+	background: url(../img/cursos/rapido.png) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.conteudoPrincipal-cursos-link .logica {
+	background: url(../img/background1.svg) no-repeat;
+  background-size: 50px 50px;
+  background-position: top center;
+}
+
+.videoSobre .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.videoSobre-sobre {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+
+.videoSobre-sobre-list {
+  flex-grow: 1;
+}
+
+.videoSobre-video {
+  flex-grow: 1;
+  flex-shrink: 2;
+}
+
+.rodapePrincipal-navMap-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 260px;
+}
+
+.rodapePrincipal-patrocinadores .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin-right: 5%;
+}
+.rodapePrincipal-contatoForm{
+  width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+                /*Parte Mobile*/
+@media(max-width: 769px) {
+      .cabecalhoPrincipal-nav {
+        flex-direction: column;
+      }
+
+      .cabecalhoPrincipal .container{
+        flex-direction: column;  
+        align-items: initial;
+        text-align: center;
+      }
+
+      .conteudoPrincipal-cursos {
+        flex-direction: column;
+      }
+      .conteudoPrincipal-cursos-link{
+        width: 100%;
+      }
+
+      .videoSobre .container{
+        flex-direction: column;
+      }
+
+      .rodapePrincipal-navMap-list{
+        height: auto;
+      }
+
+      .rodapePrincipal-patrocinadores .container {
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .rodapePrincipal-patrocinadores-list{
+        margin: 0;
+        width: 100%;
+      }
+
+      .rodapePrincipal-contatoForm {
+        width: 100%;
+      }
+
+      .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+      }
+
+      .cabecalhoPrincipal-nav-link-app {
+        order:-1;/* APLICAVEL PARA ORDENAR OS ITENS, SEMPRE QUE 
+                    PRECISAR INVERTER A ORDEM COLOQUE NUMEROS NEGATIVOS*/
+      }
+
+}
